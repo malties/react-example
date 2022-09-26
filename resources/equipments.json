@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Crane"
+  },
+  {
+    "id": 2,
+    "name": "Tachograph"
+  },
+  {
+    "id": 3,
+    "name": "Fire Extinguisher"
+  },
+  {
+    "id": 4,
+    "name": "Hook"
+  },
+  {
+    "id": 5,
+    "name": "Custom equipment"
+  }
+]
