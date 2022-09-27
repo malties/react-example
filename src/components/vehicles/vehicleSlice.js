@@ -1,0 +1,1 @@
+const vehicleData = require('../../../resources/vehicles.json');

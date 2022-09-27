@@ -1,6 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import { Counter } from './features/counter/Counter';
+/**
+ * @jest-environment jsdom
+ */
+
+import logo from '../styles/logo.svg';
+import '../styles/App.css';
+import { Counter } from '../features/counter/Counter';
+import { Vehicle } from '../components/vehicles/Vehicle'; 
+import { Equipment } from '../components/equipment/Equipment'
 
 function App() {
   return (
@@ -19,7 +25,9 @@ function App() {
           Learn React
         </a>
       </header>
-      <Counter></Counter>
+      <Equipment/>
+      <Vehicle/>
+      <Counter/>
     </div>
   );
 }

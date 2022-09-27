@@ -1,0 +1,1 @@
+const equipmentData = require('../../../resources/equipments.json');
