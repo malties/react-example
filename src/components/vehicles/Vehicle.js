@@ -1,10 +1,22 @@
 import React from 'react'
+import { Equipment } from '../equipment/Equipment'
 const vehicleData = require('../../resources/vehicles.json');
 
 
-export function Vehicle() {
-    return (mapFromJson()
-)}
+export const Vehicle = 
+({id, vehicleName, driver, vehicleStatus, fuelType, equipments}) => {
+    if(!id) return <div/>
+    return (
+        <div>
+            <h3>{id}</h3>
+            <h3>{vehicleName}</h3>
+            <h3>{driver}</h3>
+            <h3>{vehicleStatus}</h3>
+            <h3>{fuelType}</h3>
+            <h3>{equipments}</h3>
+        </div>
+    )
+}
 
 export function mapFromJson(){
     return (
@@ -12,13 +24,13 @@ export function mapFromJson(){
             {vehicleData.map((data, key) =>{               
                 return(
                     <div key={key}>
-                        {data.id + " , "
-                        + data.name + " , "
-                        + data.driver + " , "
-                        + data.status + " , "
-                        + data.fuelType + " , "
-                        + data.equipments
-                        }   
+                        <Vehicle id = {data.id}
+                         vehicleName = {data.name}
+                         driver = {data.driver}
+                         vehicleStatus = {data.status}
+                         fuelType = {data.fuelType}
+                         equipments = {data.equipments} 
+                         /> 
                     </div>
                 )
             })}

@@ -2,9 +2,14 @@ import React from 'react'
 const equipmentData = require('../../resources/equipments.json');
 
 
-export function Equipment(){
-   return (mapFromJson()
-)}
+export const Equipment = ({id, name}) => {
+    if(!id) return <div/>
+    return (
+        <div>
+            <h3>{id} : {name}</h3>
+        </div>
+    )
+}
 
 export function mapFromJson(){
     return (
@@ -12,9 +17,10 @@ export function mapFromJson(){
             {equipmentData.map((data, key) =>{
                 return(
                     <div key={key}>
-                        {data.id + " , "
-                        + data.name 
-                        }   
+                        <Equipment
+                        id= {data.id} 
+                        name = {data.name} 
+                        />
                     </div>
                 )
             })}

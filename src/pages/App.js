@@ -4,7 +4,6 @@
 
 import logo from '../styles/logo.svg';
 import '../styles/App.css';
-import { Counter } from '../features/counter/Counter';
 import { Vehicle } from '../components/vehicles/Vehicle'; 
 import { Equipment } from '../components/equipment/Equipment'
 
