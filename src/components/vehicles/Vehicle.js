@@ -1,5 +1,4 @@
 import React from 'react'
-import { Equipment } from '../equipment/Equipment'
 const vehicleData = require('../../resources/vehicles.json');
 
 
@@ -8,19 +7,19 @@ export const Vehicle =
     if(!id) return <div/>
     return (
         <div>
-            <h3>{id}</h3>
-            <h3>{vehicleName}</h3>
-            <h3>{driver}</h3>
-            <h3>{vehicleStatus}</h3>
-            <h3>{fuelType}</h3>
-            <h3>{equipments}</h3>
+            <h3>ID : {id}</h3>
+            <h3>Vehicle name : {vehicleName}</h3>
+            <h3>Driver : {driver}</h3>
+            <h3>Vehicle Status : {vehicleStatus}</h3>
+            <h3>Fuel Type : {fuelType}</h3>
+            <h3>Equipment : {equipments}</h3>
         </div>
     )
 }
 
 export function mapVehicleFromJson(){
     return (
-        <div className ="vehicle-container">
+        <li className ="vehicle-container">
             {vehicleData.map((data, key) =>{               
                 return(
                     <div key={key}>
@@ -34,7 +33,7 @@ export function mapVehicleFromJson(){
                     </div>
                 )
             })}
-        </div>
+        </li>
     )
 }
 

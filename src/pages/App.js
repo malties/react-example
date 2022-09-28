@@ -2,9 +2,8 @@
  * @jest-environment jsdom
  */
 
-import logo from '../styles/logo.svg';
-import '../styles/App.css';
-import { Vehicle, mapVehicleFromJson } from '../components/vehicles/Vehicle'; 
+import '../styles/App.css';// eslint-disable-next-line
+import { Vehicle, mapVehicleFromJson } from '../components/vehicles/Vehicle'; // eslint-disable-next-line
 import { Equipment, mapEquipmentFromJson } from '../components/equipment/Equipment'
 
 function App() {
