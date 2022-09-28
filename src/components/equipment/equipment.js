@@ -11,7 +11,7 @@ export const Equipment = ({id, name}) => {
     )
 }
 
-export function mapFromJson(){
+export function mapEquipmentFromJson(){
     return (
         <div className ="equipment-container">
             {equipmentData.map((data, key) =>{

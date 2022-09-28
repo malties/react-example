@@ -18,7 +18,7 @@ export const Vehicle =
     )
 }
 
-export function mapFromJson(){
+export function mapVehicleFromJson(){
     return (
         <div className ="vehicle-container">
             {vehicleData.map((data, key) =>{               

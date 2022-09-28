@@ -4,15 +4,15 @@
 
 import logo from '../styles/logo.svg';
 import '../styles/App.css';
-import { Vehicle } from '../components/vehicles/Vehicle'; 
-import { Equipment } from '../components/equipment/Equipment'
+import { Vehicle, mapVehicleFromJson } from '../components/vehicles/Vehicle'; 
+import { Equipment, mapEquipmentFromJson } from '../components/equipment/Equipment'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-              <Equipment/>
-              <Vehicle/>
+              {mapEquipmentFromJson()}
+              {mapVehicleFromJson()}
       </header>
     </div>
   );
