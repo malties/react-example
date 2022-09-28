@@ -3,17 +3,21 @@ const vehicleData = require('../../resources/vehicles.json');
 
 
 export function Vehicle() {
+    return (mapFromJson()
+)}
+
+export function mapFromJson(){
     return (
         <div className ="vehicle-container">
-            {vehicleData.map((data, key) =>{
+            {vehicleData.map((data, key) =>{               
                 return(
                     <div key={key}>
                         {data.id + " , "
                         + data.name + " , "
-                        + data. driver + " , "
+                        + data.driver + " , "
                         + data.status + " , "
                         + data.fuelType + " , "
-                        + data.equipments 
+                        + data.equipments
                         }   
                     </div>
                 )
@@ -21,5 +25,7 @@ export function Vehicle() {
         </div>
     )
 }
+
+
 
 export default Vehicle;

@@ -3,13 +3,17 @@ const equipmentData = require('../../resources/equipments.json');
 
 
 export function Equipment(){
+   return (mapFromJson()
+)}
+
+export function mapFromJson(){
     return (
         <div className ="equipment-container">
             {equipmentData.map((data, key) =>{
                 return(
                     <div key={key}>
                         {data.id + " , "
-                            + data.name 
+                        + data.name 
                         }   
                     </div>
                 )
