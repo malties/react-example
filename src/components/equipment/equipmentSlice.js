@@ -1,4 +1,3 @@
-const equipmentData = require('../../../resources/equipments.json');
 import { createSlice } from '@reduxjs/toolkit' 
 
 export const equipmentSlice = createSlice ({
@@ -19,5 +18,5 @@ export const equipmentSlice = createSlice ({
     }
 })
 
-export const { getEquipment, addEquipment} = equipmentSlice.actions;
-export default equipmentSlice.reducer;
+export const { getEquipment, addEquipment} = equipmentSlice.actions
+export default equipmentSlice.reducer
