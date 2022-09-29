@@ -3,15 +3,19 @@
  */
 
 import '../styles/App.css';// eslint-disable-next-line
-import { Vehicle, mapVehicleFromJson } from '../components/vehicles/Vehicle'; // eslint-disable-next-line
-import { Equipment, mapEquipmentFromJson } from '../components/equipment/Equipment'
+import { Vehicle, loadVehicleFromJson } from '../components/vehicles/Vehicle'; // eslint-disable-next-line
+import { Equipment, loadEquipmentFromJson } from '../components/equipment/Equipment'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-              {mapEquipmentFromJson()}
-              {mapVehicleFromJson()}
+        <ul>
+              {loadEquipmentFromJson()}
+        </ul>
+        <ul>
+              {loadVehicleFromJson()}
+        </ul>
       </header>
     </div>
   );

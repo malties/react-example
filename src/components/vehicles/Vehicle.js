@@ -17,12 +17,13 @@ export const Vehicle =
     )
 }
 
-export function mapVehicleFromJson(){
+export function loadVehicleFromJson(){
     return (
         <li className ="vehicle-container">
             {vehicleData.map((data, key) =>{               
                 return(
                     <div key={key}>
+                        <li>
                         <Vehicle id = {data.id}
                          vehicleName = {data.name}
                          driver = {data.driver}
@@ -30,6 +31,7 @@ export function mapVehicleFromJson(){
                          fuelType = {data.fuelType}
                          equipments = {data.equipments} 
                          /> 
+                         </li>
                     </div>
                 )
             })}

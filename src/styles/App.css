@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  list-style: inside;
 }
 
 .App-logo {
@@ -41,4 +42,5 @@
   display: flex;
   flex-direction: column;
   font-size: medium;
+
 }

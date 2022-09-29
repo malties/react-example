@@ -11,21 +11,28 @@ export const Equipment = ({id, name}) => {
     )
 }
 
-export function mapEquipmentFromJson(){
+export function loadEquipmentFromJson(){
     return (
         <div className ="equipment-container">
             {equipmentData.map((data, key) =>{
                 return(
                     <div key={key}>
+                        <li>
                         <Equipment
                         id= {data.id} 
                         name = {data.name} 
                         />
+                        </li>
                     </div>
                 )
             })}
         </div>
     )
+}
+
+export function mapEquipmentFromVehicle(){
+loadEquipmentFromJson()
+  
 }
 
 export default Equipment;
