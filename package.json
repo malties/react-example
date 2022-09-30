@@ -6,6 +6,7 @@
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.24.0",
     "jest-config": "^29.0.3",
     "jsdom": "^20.0.0",
@@ -18,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "jest"
   },
